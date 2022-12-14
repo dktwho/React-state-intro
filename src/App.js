@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [name, setName] = useState('prod')
+  const [cost, setCost] = useState(1000)
+  const [inCart, setInCart] = useState(false)
+
+  function clickHander() {
+    setName('frfrfr')
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>{name}</p>
+      <button onClick={clickHander}>btn</button>
+      <button onClick={() => setName('xfvbg')}>btn2</button>
+      <br />
+      <hr />
+      {name}-{cost} <br />
+      <button onClick={() => setName('some prod')}>Change prod</button> <br />
+      <button onClick={() => setCost(2000)}>Change cost</button> <br />
+       <span>{inCart ? 'в корзине' : 'не в корзине'}</span>
+       <button onClick={() => setInCart(!inCart)}>+/-</button>
+
     </div>
   );
 }
