@@ -7,7 +7,7 @@ function App() {
   const [inCart, setInCart] = useState(false)
 
   function clickHander() {
-    setName('frfrfr')
+    setName('new prod')
   }
 
 
