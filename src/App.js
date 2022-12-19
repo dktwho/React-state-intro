@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <p>{name}</p>
       <button onClick={clickHander}>btn</button>
-      <button onClick={() => setName('xfvbg')}>btn2</button>
+      <button onClick={() => setName('New new prod')}>btn2</button>
       <br />
       <hr />
       {name}-{cost} <br />
