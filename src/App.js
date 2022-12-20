@@ -18,8 +18,12 @@ function App() {
       <button onClick={clickHander}>btn</button>
       <button onClick={() => setName('New new prod')}>btn2</button>
       <br />
+   
+
+      <br />
       <hr />
       {name}-{cost} <br />
+      <br />
       <button onClick={() => setName('some prod')}>Change prod</button> <br />
       <button onClick={() => setCost(2000)}>Change cost</button> <br />
        <span>{inCart ? 'в корзине' : 'не в корзине'}</span>

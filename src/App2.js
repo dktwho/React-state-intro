@@ -17,7 +17,9 @@ function rest() {
 }
   return (
     <div className='App'>
+      <br />
      Counter : {count}
+     <br />
      <button onClick={() => setCount(count + 1)}>Increment</button>
      <button onClick={() => setCount(count - 1)}>Decrement</button>
      <button onClick={() => setCount(0)}>Reset</button>
@@ -26,7 +28,8 @@ function rest() {
      <hr />
      <br />
      Counter: <b>{count2}</b>
-     <button onClick={incr}>incr</button>
+     <br />
+     <button onClick={incr}>incr</button> 
      <button onClick={decr}>decr</button>
      <button onClick={rest}>reset</button>
 
