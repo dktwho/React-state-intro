@@ -17,7 +17,7 @@ const App3 = () => {
     <div className='App'>
       {name} -   {surName} -  {age} {isBan ? <p>is banned</p> : <p>not banned</p> } <br />
 
-    <button onClick={() => setName('Bill')}>changeName</button> 
+    <button onClick={() => setName('Billy')}>changeName</button> 
     <button onClick={() => setSurName('Cage')}>change surName</button> 
     <button onClick={() => setAge(99)}>change age</button>  <br />
 
